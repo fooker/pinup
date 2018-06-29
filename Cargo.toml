@@ -1,0 +1,12 @@
+[package]
+name = "pinup"
+version = "0.1.0"
+authors = ["Dustin Frisch <fooker@lab.sh>"]
+
+[dependencies]
+sysfs_gpio = {version="0.5"}
+serde = {version="1"}
+serde_derive = {version="1"}
+serde_yaml = {version="0.7"}
+clap = {version="2"}
+ctrlc = { version = "3.0", features = ["termination"] }
