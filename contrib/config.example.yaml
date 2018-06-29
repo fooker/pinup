@@ -1,0 +1,25 @@
+pins:
+  188:
+    name: up
+    debounce: 100
+    inverted: true
+    script: |
+      /usr/bin/pamixer --increase 10
+  25:
+    name: down
+    debounce: 100
+    inverted: true
+    script: |
+      /usr/bin/pamixer --decrease 10
+  190:
+    name: left
+    debounce: 100
+    inverted: true
+    script: |
+      /usr/bin/mpc toggle
+  24:
+    name: right
+    debounce: 100
+    inverted: true
+    script: |
+      /usr/bin/mpc next

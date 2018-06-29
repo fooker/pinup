@@ -1,0 +1,13 @@
+[Unit]
+Description=Pinup
+
+
+[Service]
+Type=simple
+ExecStart=/opt/pinup --config /etc/pinup.yaml
+
+Restart=on-failure
+
+
+[Install]
+WantedBy=multi-user.target
